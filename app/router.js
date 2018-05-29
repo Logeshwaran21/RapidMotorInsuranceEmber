@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('prodoc');
+  this.route('hosrec');
+  this.route('home');
+  this.route('records');
+  this.route('welcome');
 });
 
 export default Router;

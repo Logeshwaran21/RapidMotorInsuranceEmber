@@ -12,8 +12,10 @@
 
 #page-wrapper {
     width: 100%;        
-    padding: 0;
-    background-color: #fff;
+    padding: 34px 363px;
+    background-color: #02031d;
+    margin-bottom: 50%;
+    
 }
 
 @media(min-width:768px) {
@@ -22,14 +24,14 @@
     }
 
     #page-wrapper {
-        padding: 22px 10px;
+        padding: 34px 363px;
     }
 }
 
 /* Top Navigation */
 
 .top-nav {
-    padding: 0 15px;
+    padding: -10px 361px;
 }
 
 .top-nav>li {
@@ -41,7 +43,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     line-height: 20px;
-    color: #fff;
+    color: rgb(253, 253, 253);
 }
 
 .top-nav>li>a:hover,
@@ -49,8 +51,8 @@
 .top-nav>.open>a,
 .top-nav>.open>a:hover,
 .top-nav>.open>a:focus {
-    color: #fff;
-    background-color: #1a242f;
+    color: rgb(0, 0, 0);
+    background-color: #1998a8;
 }
 
 .top-nav>.open>.dropdown-menu {
@@ -61,8 +63,8 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     background-color: #fff;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    -webkit-box-shadow: 0 6px 12px rgb(255, 255, 255);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 
 .top-nav>.open>.dropdown-menu>li>a {
@@ -82,7 +84,7 @@
         border-radius: 0;
         border-top: 1px rgba(0,0,0,.5) solid;
         overflow-y: auto;
-        background-color: #222;
+        background-color: rgb(37, 161, 161);
         /*background-color: #5A6B7D;*/
         bottom: 0;
         overflow-x: hidden;
@@ -91,19 +93,19 @@
 
     .side-nav>li>a {
         width: 225px;
-        border-bottom: 1px rgba(0,0,0,.3) solid;
+        border-bottom: 1px rgba(36, 138, 138, 0.3) solid;
     }
 
     .side-nav li a:hover,
     .side-nav li a:focus {
         outline: none;
-        background-color: #1a242f !important;
+        background-color: #25b9b9 !important;
     }
 }
 
 .side-nav>li>ul {
     padding: 0;
-    border-bottom: 1px rgba(0,0,0,.3) solid;
+    border-bottom: 1px rgb(250, 15, 15) solid;
 }
 
 .side-nav>li>ul>li>a {
@@ -111,11 +113,11 @@
     padding: 10px 15px 10px 38px;
     text-decoration: none;
     /*color: #999;*/
-    color: #fff;    
+    color: rgb(0, 0, 0);    
 }
 
 .side-nav>li>ul>li>a:hover {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .navbar .nav > li > a > .label {
@@ -141,3 +143,38 @@
 .navbar-brand {
     padding: 5px 15px;
 }
+.user-row {
+    margin-bottom: 14px;
+}
+
+.user-row:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-user {
+    margin: 13px 0;
+    padding: 5px;
+    height: 100%;
+}
+
+.dropdown-user:hover {
+    cursor: pointer;
+}
+
+.table-user-information > tbody > tr {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information > tbody > tr:first-child {
+    border-top: 0;
+}
+
+
+.table-user-information > tbody > tr > td {
+    border-top: 0;
+}
+.toppad
+{margin-top:20px;
+}
+
+ 
