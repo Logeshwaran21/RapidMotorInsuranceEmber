@@ -1,0 +1,247 @@
+
+<body style="background-color:rgb(131, 160, 163);">
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<h2>Medical Information</h2>
+	<ul class="nav nav-pills" style="margin-left:55px">
+             
+      
+               <li class=" " style="width:30%"><a class="btn btn-lg btn-default" data-toggle="tab" href="#home">Doctor</a></li>
+               <li class=" " style="width:30%"><a class=" btn btn-lg btn-default" data-toggle="tab" href="#menu1">patient</a></li>
+               <li class=" " style="width:30%"><a class=" btn btn-lg btn-default" data-toggle="tab" href="#menu2">lab</a></li>
+            </ul>
+			<div class="tab-content">
+               <div id="home" class="tab-pane fade in active">
+                  <form action="#">
+			{{!-- <form action="#" method="post"> --}}
+				<div class="left-agileits-w3layouts same">
+					<div class="gaps">
+						<p>Doctor Name</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>	
+					<div class="gaps">
+						<p>Last Name</p>
+							<input type="text" name="Last Name" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Gender</p>	
+							<select class="form-control">
+								<option></option>
+								<option>Male</option>
+								<option>Female</option>
+							</select>
+					</div>
+					<div class="gaps">
+						<p>Date of Birth</p>		
+						<input  id="datepicker1" name="Text" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+					</div>
+					 <div class="gaps">
+						<p>Experience in Years</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>	
+					<div class="gaps">
+						<p>Designation</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>			
+					
+					<div class="gaps">	
+						<p>Phone Number</p>
+						<input type="text" name="Number" placeholder="" required=""/>
+					</div>
+				<div class="gaps">	
+						<p>Home Phone</p>
+						<input type="text" name="Number" placeholder="" required=""/>
+					</div>
+				</div>
+				<div class="right-agileinfo same">
+					<div class="gaps">
+						<p>Hospital Name</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Qualification</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Address</p>
+						<textarea id="message" name="message" placeholder="" title="Please enter Your Comments"></textarea>
+						</div>
+						<br><br>
+					 <div class="gaps">
+						<p>License id</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>
+					
+					
+					<div class="gaps">	
+						<p>Password</p>
+						<input type="text" name="Number" placeholder="" required=""/>
+					</div>
+				<div class="gaps">	
+						<p>Confirm Password</p>
+						<input type="text" name="Number" placeholder="" required=""/>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<button type="submit" class="pull-right btn btn-block btn-success">Submit</button>
+			</form>
+		</div>
+   
+   
+               <div id="menu1" class="tab-pane fade in active">
+                  <form action="#">
+			{{!-- <form action="#" method="post"> --}}
+				<div class="left-agileits-w3layouts same">
+					<div class="gaps">
+						<p>Patient Name</p>
+						<input type="text" name="Patient Name" placeholder="" required=""/>
+					</div>	
+					<div class="gaps">
+						<p>Last Name</p>
+							<input type="text" name="Last Name" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Gender</p>	
+							<select class="form-control">
+								<option></option>
+								<option>Male</option>
+								<option>Female</option>
+							</select>
+					</div>
+					<div class="gaps">
+						<p>Date of Birth</p>		
+						<input  id="datepicker1" name="Text" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+					</div>
+					<div class="gaps">
+						<p>Home Number</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>	
+					
+					<div class="gaps">	
+						<p>Phone Number</p>
+						<input type="text" name="Number" placeholder="" required=""/>
+					</div>
+					<div class="gaps">	
+						<p>Adhaar Number</p>
+						<input type="text" name="Number" placeholder="" required=""/>
+					</div>
+				</div>
+				<div class="right-agileinfo same">
+					<div class="gaps">
+						<p>Occupation</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Blood Group</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Address</p>
+						<textarea id="message" name="message" placeholder="" title="Please enter Your Comments"></textarea>
+						</div>
+						<br><br>
+					<div class="gaps">
+						<p>Password</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>
+					<div class="gaps">	
+						<p>Confirm Password </p>
+						<input type="text" name="Number" placeholder="" required=""/>
+					</div>
+					
+				</div>
+				<div class="clear"></div>
+				<button type="submit" class="pull-right btn btn-block btn-success">Submit</button>
+			</form>
+		
+   </div>
+   <div id="menu2" class="tab-pane fade in active">
+                  <form action="#">
+			{{!-- <form action="#" method="post"> --}}
+				<div class="left-agileits-w3layouts same">
+					<div class="gaps">
+						<p>First Name</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>	
+					<div class="gaps">
+						<p>Last Name</p>
+							<input type="text" name="Last Name" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Gender</p>	
+							<select class="form-control">
+								<option></option>
+								<option>Male</option>
+								<option>Female</option>
+							</select>
+					</div>
+					<div class="gaps">
+						<p>Date of Birth</p>		
+						<input  id="datepicker1" name="Text" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+					</div>
+					<div class="gaps">
+						<p>Designation</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>	
+					<div class="gaps">
+						<p>Experience in years</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>			
+					
+					<div class="gaps">	
+						<p>Phone Number</p>
+						<input type="text" name="Number" placeholder="" required=""/>
+					</div>
+					<div class="gaps">	
+						<p>Home Number</p>
+						<input type="text" name="Number" placeholder="" required=""/>
+					</div>
+				</div>
+				<div class="right-agileinfo same">
+					<div class="gaps">
+						<p>Lab Name</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Qualification</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>
+					<div class="gaps">
+						<p>Address</p>
+						<textarea id="message" name="message" placeholder="" title="Please enter Your Comments"></textarea>
+						</div><br><br>
+					 <div class="gaps">
+						<p>License Id</p>
+						<input type="text" name="First Name" placeholder="" required=""/>
+					</div>
+					
+					
+					<div class="gaps">	
+						<p>Password</p>
+						<input type="text" name="Number" placeholder="" required=""/>
+					</div>
+					<div class="gaps">	
+						<p>Confirm Password</p>
+						<input type="text" name="Number" placeholder="" required=""/>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<button type="submit" class="pull-right btn btn-block btn-success">Submit</button>
+			</form>
+		</div>
+		
+   </div>
+	</div>
+    </div>
+	
+</body>
+  
+		{{!-- <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<!-- Calendar -->
+				<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+				  <script>
+						  $(function() {
+							$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+						  });
+				  </script> --}}

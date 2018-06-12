@@ -11,7 +11,20 @@ Router.map(function() {
   this.route('hosrec');
   this.route('home');
   this.route('records');
-  this.route('welcome');
+
+  this.route('medication');
+  this.route('firstaid');
+  this.route('login');
+  this.route('reg');
+  this.route('phome');
+  this.route('pprodoc');
+  this.route('precords');
+  this.route('pmedication');
+  this.route('pfirstaid');
+  this.route('lab');
+  this.route('lhome');
+  this.route('lprofile');
+  this.route('ltest');
 });
 
 export default Router;

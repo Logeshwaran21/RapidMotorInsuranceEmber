@@ -3,22 +3,22 @@ import Controller from '@ember/controller';
 export default Controller.extend({
     actions: {
         show0: function() {
-            this.transitionToRoute('home');
+            this.transitionToRoute('phome');
       },
         show: function() {
-              this.transitionToRoute('prodoc');
+              this.transitionToRoute('pprodoc');
         },
      show1: function(){
-            this.transitionToRoute('records');
+            this.transitionToRoute('precords');
                 },
                 show2: function(){
-                this.transitionToRoute('medication');
+                this.transitionToRoute('pmedication');
                  },         
                 show3: function(){
-                this.transitionToRoute('firstaid');
+                this.transitionToRoute('pfirstaid');
                 },
                 show4: function(){
-                this.transitionToRoute('login');
+                this.transitionToRoute('plogin');
             }
     
     }

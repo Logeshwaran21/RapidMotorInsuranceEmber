@@ -1,5 +1,8 @@
-
-    <body class="homescreen">
+ <body class="homescreen">
+     
+<!------ Include the above in your HEAD tag ---------->
+<div id="throbber" style="display:none; min-height:120px;"></div>
+<div id="noty-holder"></div>
 <div id="wrapper">
     <!-- Navigation -->
     
@@ -18,7 +21,8 @@
             <a class="navbar-brand" href="http://cijulenlinea.ucr.ac.cr/dev-users/">
                
             </a>
-        </div>
+       
+   
         
         <!-- Top Menu Items -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -37,67 +41,12 @@
             </li>
         </ul>
         </div>
+        
         </div>
-        </div>
-   {{!-- <h1>Welcome to EHR Doctor's portal</h1> --}}
-    <div class="container">
-                <div class="row">
-                    <div class="col-xs-4 col-xs-offset-4">
-<div>
-    
-    <h1><br>Profile</h1>
-</div>
-
-
-                        <img class="img-responsive picture" src="http://www.kusalimika.ch/file/2017/02/avaar.jpg">
-                        <div>
-                            <h5 class="text-bold"></h5>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 col-xs-offset-4 text-left">
-                        <div class=" col-xs-6 tital">Doctor Name:</div>
-                        <div class=" col-xs-6 ">Dr.Thomas Edward</div>
-                        <div class="clearfix"></div>
-                        <div class="bot-border"></div>
-
-                        <div class="col-xs-6 tital ">License Id:</div>
-                        <div class="col-xs-6">D0AP123456</div>
-                        <div class="clearfix"></div>
-                        <div class="bot-border"></div>
-
-                        <div class="col-xs-6 tital ">Designation:</div>
-                        <div class="col-xs-6">Consultant</div>
-                        <div class="clearfix"></div>
-                        <div class="bot-border"></div>
-
-                         <div class="col-xs-6 tital ">Qualification:</div>
-                        <div class="col-xs-6">M.B.B.S,London</div>
-                        <div class="clearfix"></div>
-                        <div class="bot-border"></div>
-
-                        <div class="col-xs-6 tital ">Age:</div>
-                        <div class="col-xs-6">45 years old</div>
-                        <div class="clearfix"></div>
-                        <div class="bot-border"></div>
-
-                        <div class="col-xs-6 tital ">Hospital Name:</div>
-                        <div class="col-xs-6">Apollo Hospital</div>
-                        <div class="clearfix"></div>
-                        <div class="bot-border"></div>
-
-                
-
-                        <div class="col-xs-6 tital ">Experience(in years):</div>
-                        <div class="col-xs-6">15</div>
-                        <div class="clearfix"></div>
-                        <div class="bot-border"></div>
-                    </div>
-                </div>    
-                 <div>
-            <ul class="nav navbar-nav side-nav">
+        
+        
+        <div>
+            <ul class="nav navbar-nav side-nav" style="top: 142px">
                 <li>
                    
                     <a href="home" id="profile" {{action "show0"}}><font color="black">Home</font></a>
@@ -127,10 +76,57 @@
                 </li>
             </ul>
             </div>
-        </div>
+             </div>
+   {{!-- <h1>Welcome to EHR Doctor's portal</h1> --}}
+    <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4">
+<div>
+    
+    <h1><br>Profile</h1>
+</div>
+                        <img class="propic" style="width:340px;margin-top:40px" src="http://www.kusalimika.ch/file/2017/02/avaar.jpg">
+                        <div>
+                            <h5 class="text-bold"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4 text-left">
+                        <div class=" col-xs-6 tital">Doctor Name:</div>
+                        <div class=" col-xs-6 ">Dr.Thomas Edward</div>
+                        <div class="clearfix"></div>
+                        <div class="bot-border"></div>
+                        <div class="col-xs-6 tital ">License Id:</div>
+                        <div class="col-xs-6">D0AP123456</div>
+                        <div class="clearfix"></div>
+                        <div class="bot-border"></div>
+                        <div class="col-xs-6 tital ">Designation:</div>
+                        <div class="col-xs-6">Consultant</div>
+                        <div class="clearfix"></div>
+                        <div class="bot-border"></div>
+                         <div class="col-xs-6 tital ">Qualification:</div>
+                        <div class="col-xs-6">M.B.B.S,London</div>
+                        <div class="clearfix"></div>
+                        <div class="bot-border"></div>
+                        <div class="col-xs-6 tital ">Age:</div>
+                        <div class="col-xs-6">45 years old</div>
+                        <div class="clearfix"></div>
+                        <div class="bot-border"></div>
+                        <div class="col-xs-6 tital ">Hospital Name:</div>
+                        <div class="col-xs-6">Apollo Hospital</div>
+                        <div class="clearfix"></div>
+                        <div class="bot-border"></div>
+                
+                        <div class="col-xs-6 tital ">Experience(in years):</div>
+                        <div class="col-xs-6">15</div>
+                        <div class="clearfix"></div>
+                        <div class="bot-border"></div>
+                    </div>
+                </div> 
+                  
+    </div>
+        
          </body>
-         
-   
-
 
 

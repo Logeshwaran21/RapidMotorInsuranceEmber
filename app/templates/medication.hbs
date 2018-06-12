@@ -1,0 +1,187 @@
+
+    <body class="homescreen">
+        <div id="wrapper">
+    <!-- Navigation -->
+    
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            
+            
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cijulenlinea.ucr.ac.cr/dev-users/">
+               
+            </a>
+        </div>
+        
+        <!-- Top Menu Items -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-right top-nav">
+            
+                
+                      
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doctor</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div>
+            <ul class="nav navbar-nav side-nav">
+                <li>
+                   
+                    <a href="home" id="profile" {{action "show0"}}><font color="black">Home</font></a>
+                   
+                </li>
+                <li>
+                   
+                    <a href="home" id="profile" {{action "show"}}><font color="black">Profile</font></a>
+                   
+                </li>
+                <li>
+                   <a href="home" id="profile1" {{action "show1"}}><font color="black">Hospital Records</font></a>
+                    
+                </li>
+                <li>
+                    <a href="home" id="profile2" {{action "show2"}}><font color="black">Medication</font></a>
+                </li>
+                <li>
+                    <a href="home" id="profile3" {{action "show3"}}><font color="black">FirstAid Info</font></a>
+                </li>
+                <li>
+                    <a href="home" id="profile4"{{action "show4"}}><font color="black">Logout</font></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+     
+{{!-- <div bg-color="green"> --}}
+    
+<div class="bootstrap-iso">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-10 col-sm-10 col-xs-12">
+<center><form method="post">
+<div class="form-group ">
+<label class="control-label requiredField" for="name">
+<h2>Medication</h2>
+</label>
+<input class="form-control" id="name" name="name" placeholder="panadol etc." type="text" style="width:50%"/>
+<span class="help-block" id="hint_name">
+what medication is required
+</span>
+</div>
+<div class="form-group" id="div_checkbox1">
+<label class="control-label " for="checkbox1">
+Check all that apply
+</label>
+<div class=" ">
+<label class="checkbox-inline">
+<input name="checkbox1" type="checkbox" value="Taken as Needed"/>
+Taken as Needed
+</label>
+<label class="checkbox-inline">
+<input name="checkbox1" type="checkbox" value="Taken as Scheduled"/>
+Taken as Scheduled
+</label>
+<label class="checkbox-inline">
+<input name="checkbox1" type="checkbox" value="With Food"/>
+With Food
+</label>
+<label class="checkbox-inline">
+<input name="checkbox1" type="checkbox" value="On Empty Stomach"/>
+On Empty Stomach
+</label>
+</div>
+</div>
+<div class="form-group" id="div_Schedule">
+<label class="control-label " for="Schedule">
+When to take them
+</label>
+<div class=" ">
+<label class="checkbox-inline">
+<input name="Schedule" type="checkbox" value="Breakfast"/>
+Breakfast
+</label>
+<label class="checkbox-inline">
+<input name="Schedule" type="checkbox" value="Lunch"/>
+Lunch
+</label>
+<label class="checkbox-inline">
+<input name="Schedule" type="checkbox" value="Dinner"/>
+Dinner
+</label>
+<label class="checkbox-inline">
+<input name="Schedule" type="checkbox" value="Bedtime"/>
+Bedtime
+</label>
+<label class="checkbox-inline">
+<input name="Schedule" type="checkbox" value="Custom"/>
+Custom
+</label>
+<span class="help-block" id="hint_Schedule">
+Check all that apply
+</span>
+</div>
+</div>
+<label class="control-label " for="Dosage">
+Dosage
+</label>
+<div class="form-inline">
+
+<div class="input-group">
+<div class="input-group-addon">
+Take
+</div>
+<input class="form-control" id="Dosage" name="Dosage" placeholder="2 pills" type="text"/>
+</div>
+
+<div class="input-group">
+<div class="input-group-addon">
+Every
+</div>
+<input class="form-control" id="Dosage" name="Dosage" placeholder="6 hours" type="text"/>
+</div>
+<span class="help-block" id="hint_Schedule">
+Please double check dosage information.
+</span>
+</div>
+
+<div class="form-group ">
+<label class="control-label " for="text1">
+Additional Information
+</label>
+<input class="form-control" id="text1" name="text1" placeholder="taken upside down while wearing a tutu" type="text" style="width:50%"/>
+<span class="help-block" id="hint_text1">
+Any further instructions
+</span>
+</div>
+<div class="form-group">
+<div>
+<button class="btn btn-primary " name="submit" type="submit">
+Submit
+</button>
+</div>
+</div>
+</form>
+</center>
+</div>
+</div>
+</div>
+</div>
+    
+</body>
+

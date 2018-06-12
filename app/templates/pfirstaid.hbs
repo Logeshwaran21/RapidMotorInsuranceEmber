@@ -1,20 +1,4 @@
-
-    <br>
-   
-     <body class ="homescreen"> 
-
-    <br><br>
-<h1><center>Welcome to Doctor's EHR portal</center></h1>
-<div>
-    <center>
-<form action="connect">Patient Id: <input type="text" name="patientid" value=""><br>
-<br>
-<input type="submit" value="Submit">
-</form>
-</center>
-</div>
-
-
+<body class="homescreen">
 <div id="wrapper">
     <!-- Navigation -->
     
@@ -55,6 +39,11 @@
         <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
         <div>
             <ul class="nav navbar-nav side-nav">
+                <li>
+                   
+                    <a href="home" id="profile0" {{action "show0"}}><font color="black">Home</font></a>
+                   
+                </li>
                 
                 <li>
                    
@@ -76,52 +65,45 @@
             </ul>
             </div>
         </div>
-         </div>
-    </body>
-    
-        {{!-- </div> --}}
-        <!-- /.navbar-collapse -->
-    
+        </div>    
+<div class="container">
+    <br>
+    <br>
+<br>
+<button id="add">Add Another Item</button>
+<button id="remove">Remove a table</button>
+<br><br>
+<div id="div1">
+<table id="table">
+	<tr>
+    	<td>Item</td><td><input class="form-control" type="text" id="item" placeholder="items"></td>
+    	<td>type</td><td><input class="form-control" type="text" id="type" placeholder="type"></td>
+   	    <td>Quantity</td><td><input class="form-control" type="text" id="qty" placeholder="quantity"></td>
+    </tr>
+    	<tr>
+    	<td>Store</td><td><input class="form-control" type="text" id="item" placeholder="store"></td>
+    	<td>Description</td><td><input class="form-control" type="text" id="type" placeholder="desciption"></td>
+   	    <td>Price</td><td><input class="form-control" type="text" id="qty" placeholder="Price"></td>
+    </tr>
+</table>
 
-    {{!-- <div id="page-wrapper">
-        <div class="container-fluid">
-            <!-- Page Heading -->
-            <div class="row" id="main" >
-                <div class="col-sm-12 col-md-12 well" id="content">
-                    <h1>Welcome to EHR Doctor's portal</h1>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        
-        </div>
-   --}}
-
-<!-- /#wrapper -->
+</div>
+</div>
+</body>
 {{!-- <script>
     $(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-    $(".side-nav .collapse").on("hide.bs.collapse", function() {                   
-        $(this).prev().find(".fa").eq(1).removeClass("fa-angle-right").addClass("fa-angle-down");
+    $("#remove").click(function(){
+        $("#table").remove();
     });
-    $('.side-nav .collapse').on("show.bs.collapse", function() {                        
-        $(this).prev().find(".fa").eq(1).removeClass("fa-angle-down").addClass("fa-angle-right");        
+});
+
+
+$(function(){
+    $("#add").click(function(){
+        $("#table").clone().appendTo("#div1");
     });
-})    
-</script>
-<body>
-    <script>
-     function show()
-           {
-               document.getElementById("profile").style.display="block";
-           }
+});
+</script> --}}
 
 
-</script>
-</body> --}}
-
-
-       
-{{!-- <div id="throbber" style="display:none; min-height:120px;"></div>
-<div id="noty-holder"></div> --}}
 
