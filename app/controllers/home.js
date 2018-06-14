@@ -16,7 +16,34 @@ export default Controller.extend({
      },
      show4: function(){
     this.transitionToRoute('login');
-     }
+     },
+    //  show6:function () {
+    //   var x = document.getElementById("reports");
+    //   var y = document.getElementById("reports1");
+    //   x.style.display= "none";
+    //   y.style.display= "none";
+
+    //  },
+
+    show5:function () {
+      var x = document.getElementById("reports");
+      var y = document.getElementById("reports1");
+
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+  
     
-    }
+    if (y.style.display === "none") {
+      y.style.display = "block";
+  } else {
+      y.style.display = "none";
+  }
+ 
+}
+}
+
+    
 });

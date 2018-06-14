@@ -1,21 +1,21 @@
    
-   <head>
+   {{!-- <head>
 <meta name="viewport" content="width=device-width, initial-scale=1"></head>
-   <script>
+   <script type="text/javascript">
 function myFunction() {
-   var x = document.getElementById("report");
+   var x = document.getElementById("reports");
    
    if (x.style.display === "block") {
        x.style.display = "none";
-	   console
-   } else {
-       x.style.display = "block";
-
+	   console.log("hi")
    }
+   else{
+	   x.style.display="none"
+   } 
    
     
 }
-</script>
+</script> --}}
 <br>
 	<body class ="homescreen">
 		<br>
@@ -27,7 +27,8 @@ function myFunction() {
 					<form action="connect">Patient Id: 
 						<input type="text" name="patientid" value="">
 							<br>
-								<button type="submit" onclick="myFunction()" value="Submit">Submit</button>
+								<button {{action "show5"}}>submit</button>
+								
 								</form>
 							</center>
 						</div>
@@ -73,8 +74,13 @@ function myFunction() {
 								</div>
 							</div>
 						</div>
-						<form id="reports">
-													<div class="container">
+
+
+
+
+						<div class="container">
+						
+													<div id="reports" style="display: none;" class="container">
 							<div class="row">
 								<div class="col-md-12">
 									<h2>Record list of patient</h2>
@@ -170,7 +176,7 @@ function myFunction() {
 									
 								</div>
 							</div>
-						</form>
+						
 							<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
 								<div class="modal-dialog">
 									<div class="modal-content">
@@ -204,7 +210,9 @@ function myFunction() {
 										</div>
 										<!-- /.modal-dialog -->
 									</div>
-                                    <div class="container">
+									</div>
+
+                                    <div id="reports1" style="display: none;" class="container">
 							<div class="row">
 									<div class="col-md-12">
 										<h2>Lab Reports</h2>
@@ -251,7 +259,7 @@ function myFunction() {
 														</tr>
 													</tbody>
 												</table>
-												<div class="clearfix"></div>
+												{{!-- <div class="clearfix"></div>
 												<ul class="pagination pull-right">
 													<li class="disabled">
 														<a href="#">
@@ -262,7 +270,7 @@ function myFunction() {
 														<a href="#">1</a>
 													</li>
 													
-												</ul>
+												</ul> --}}
 											</div>
 										</div>
 									
