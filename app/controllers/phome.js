@@ -18,7 +18,7 @@ export default Controller.extend({
                                 this.transitionToRoute('pfirstaid');
                                     },
                                     show4: function(){
-                                        this.transitionToRoute('plogin');
+                                        this.transitionToRoute('login');
                                             }
     
     }

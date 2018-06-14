@@ -3,8 +3,20 @@ import Controller from '@ember/controller';
 export default Controller.extend({
    actions: {
        Login: function() {
+        var category = $('#id_of_select').val(); 
+           if(category=="Doctor")
+           {
        
             this.transitionToRoute('home');
+           }
+           else if(category=="Lab Reporter"){
+            this.transitionToRoute('lhome'); 
+           }
+           else if(category=="General User"){
+            this.transitionToRoute('phome'); 
+           }
+        
+        
 //            alert();
 //            var email = $('#loginEmail').val();
 //            console.log(email);
