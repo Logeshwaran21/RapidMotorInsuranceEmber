@@ -1,44 +1,5 @@
 
     <body class="homescreen">
-<div id="wrapper">
-    <!-- Navigation -->
-    
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            
-            
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://cijulenlinea.ucr.ac.cr/dev-users/">
-               
-            </a>
-        </div>
-        
-        <!-- Top Menu Items -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-right top-nav">
-            
-                
-                      
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doctor</a>
-                {{!-- <ul class="dropdown-menu">
-                    <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
-                    <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
-                </ul> --}}
-            </li>
-        </ul>
-        </div>
-        </div>
-        </div>
    {{!-- <h1>Welcome to EHR Doctor's portal</h1> --}}
     <div class="container">
                 <div class="row">
@@ -58,40 +19,53 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-4 col-xs-offset-4 text-left">
-                        <div class=" col-xs-6 tital">Doctor Name:</div>
-                        <div class=" col-xs-6 ">Dr.Thomas Edward</div>
+                        <div class=" col-xs-6 tital">Patient Name:</div>
+                        <div class=" col-xs-6 ">K.Suresh Kumar</div>
                         <div class="clearfix"></div>
                         <div class="bot-border"></div>
 
-                        <div class="col-xs-6 tital ">License Id:</div>
-                        <div class="col-xs-6">D0AP123456</div>
+                        <div class="col-xs-6 tital ">Patient Id:</div>
+                        <div class="col-xs-6">P0PP123456</div>
                         <div class="clearfix"></div>
                         <div class="bot-border"></div>
 
-                        <div class="col-xs-6 tital ">Designation:</div>
-                        <div class="col-xs-6">Consultant</div>
+                        <div class="col-xs-6 tital ">Gender:</div>
+                        <div class="col-xs-6">Male</div>
                         <div class="clearfix"></div>
                         <div class="bot-border"></div>
 
-                         <div class="col-xs-6 tital ">Qualification:</div>
-                        <div class="col-xs-6">M.B.B.S,London</div>
+                         <div class="col-xs-6 tital ">D.O.B:</div>
+                        <div class="col-xs-6">21/01/1983</div>
                         <div class="clearfix"></div>
                         <div class="bot-border"></div>
 
                         <div class="col-xs-6 tital ">Age:</div>
-                        <div class="col-xs-6">45 years old</div>
+                        <div class="col-xs-6">35 years old</div>
                         <div class="clearfix"></div>
                         <div class="bot-border"></div>
 
-                        <div class="col-xs-6 tital ">Hospital Name:</div>
-                        <div class="col-xs-6">Apollo Hospital</div>
+                        <div class="col-xs-6 tital "> Contact no:</div>
+                        <div class="col-xs-6">9988771122</div>
+                        <div class="clearfix"></div>
+                        <div class="bot-border"></div>
+                        
+                        <div class="col-xs-6 tital "> Address:</div>
+                        <div class="col-xs-6">22,Nehru nagar,Saidapet,Chennai</div>
                         <div class="clearfix"></div>
                         <div class="bot-border"></div>
 
+<div class="col-xs-6 tital ">Occupation</div>
+                        <div class="col-xs-6">Farmer</div>
+                        <div class="clearfix"></div>
+                        <div class="bot-border"></div>
                 
+                <div class="col-xs-6 tital "> Blood Group</div>
+                        <div class="col-xs-6">O+ve</div>
+                        <div class="clearfix"></div>
+                        <div class="bot-border"></div>
 
-                        <div class="col-xs-6 tital ">Experience(in years):</div>
-                        <div class="col-xs-6">15</div>
+                        <div class="col-xs-6 tital ">Aadhar no:</div>
+                        <div class="col-xs-6">151121213111</div>
                         <div class="clearfix"></div>
                         <div class="bot-border"></div>
                     </div>
@@ -115,6 +89,10 @@
                         <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.2</a></li>
                         <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.3</a></li>
                     </ul> --}}
+                </li>
+                <li>
+                   <a href="home" id="profile0" {{action "shows"}}><font color="black">Lab Reports</font></a>
+                    
                 </li>
                 <li>
                     <a href="home" id="profile2" {{action "show2"}}><font color="black">Medication</font></a>

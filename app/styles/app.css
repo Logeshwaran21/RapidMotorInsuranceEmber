@@ -94,6 +94,7 @@
         border-top: 1px rgba(0,0,0,.5) solid;
         overflow-y: auto;
         background-color:rgba(37, 161, 144, 0);
+        margin-left: -25px;
         /* background-color: #5A6B7D; */
         bottom: 0;
         overflow-x: hidden;
@@ -277,7 +278,7 @@
        left: 0;
    }
    .homescreen{
-    background-image: url(https://i2.wp.com/2steps2health.com/wp-content/uploads/2017/10/medical.jpg);
+    background-image: url(https://www.osv.com/Portals/4/EasyDNNNews/21600/822643p13567EDNMain21600shutterstock_528854752.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -1684,7 +1685,7 @@
 }
 .form-control {
     display: block;
-    width: 100%;
+    width: 34%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
@@ -1702,7 +1703,7 @@
 }
 .form-control {
     display: block;
-    width: 100%;
+    width: 34%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
@@ -1720,7 +1721,7 @@
 }
 .form-control {
     display: block;
-    width: 100%;
+    width: 34%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
@@ -1738,7 +1739,7 @@
 }
 .form-control {
     display: block;
-    width: 100%;
+    width:34%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
@@ -2053,14 +2054,10 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-                                    /*test*/
-                                    element.style {
-                                    }
-                                    .form-control {
+} 
+    .form-control {
                                         display: block;
-                                        width: 100%;
+                                        width:340px;
                                         height: 34px;
                                         padding: 6px 12px;
                                         font-size: 14px;
@@ -2076,64 +2073,14 @@ html {
                                         -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
                                         transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
                                     }
-                                    .form-control {
-                                        display: block;
-                                        width: 100%;
-                                        height: 34px;
-                                        padding: 6px 12px;
-                                        font-size: 14px;
-                                        line-height: 1.42857143;
-                                        color: #555;
-                                        background-color: #ffffff08;
-                                        background-image: none;
-                                        border: 1px solid #ccc;
-                                        border-radius: 4px;
-                                        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-                                        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-                                        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-                                        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-                                        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-                                    }
-                                    .form-control {
-                                        display: block;
-                                        width: 100%;
-                                        height: 34px;
-                                        padding: 6px 12px;
-                                        font-size: 14px;
-                                        line-height: 1.42857143;
-                                        color: #555;
-                                        background-color: #ffffff08;
-                                        background-image: none;
-                                        border: 1px solid #ccc;
-                                        border-radius: 4px;
-                                        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-                                        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-                                        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-                                        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-                                        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-                                    }
-                                    .form-control {
-                                        display: block;
-                                        width: 100%;
-                                        height: 34px;
-                                        padding: 6px 12px;
-                                        font-size: 14px;
-                                        line-height: 1.42857143;
-                                        color: #555;
-                                        background-color: #ffffff08;
-                                        background-image: none;
-                                        border: 1px solid #ccc;
-                                        border-radius: 4px;
-                                        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-                                        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-                                        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-                                        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-                                        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-                                    }
+                                    
+                                    
+                                    
                                     input, button, select, textarea {
                                         font-family: inherit;
                                         font-size: inherit;
                                         line-height: inherit;
+                                
                                     }
                                     input {
                                         line-height: normal;
@@ -2202,10 +2149,7 @@ html {
                                         -moz-box-sizing: border-box;
                                         box-sizing: border-box;
                                     }
-                                    user agent stylesheet
-                                    input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
-                                        padding: 1px 0px;
-                                    }
+                                  
                                     user agent stylesheet
                                     input {
                                         -webkit-appearance: textfield;

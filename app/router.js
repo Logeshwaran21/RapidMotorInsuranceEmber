@@ -25,6 +25,7 @@ Router.map(function() {
   this.route('lhome');
   this.route('lprofile');
   this.route('ltest');
+  this.route('plab');
 });
 
 export default Router;

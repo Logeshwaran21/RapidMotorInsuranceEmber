@@ -4,7 +4,7 @@ export default Controller.extend({
    actions: {
        Login: function() {
        
-            this.transitionToRoute('lhome');
+            this.transitionToRoute('home');
 //            alert();
 //            var email = $('#loginEmail').val();
 //            console.log(email);

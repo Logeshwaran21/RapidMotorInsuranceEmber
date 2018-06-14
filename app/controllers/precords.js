@@ -11,6 +11,9 @@ export default Controller.extend({
      show1: function(){
                 this.transitionToRoute('records');
                     },
+                    shows: function(){
+                        this.transitionToRoute('plab');
+                            },
                     show2: function(){
                         this.transitionToRoute('medication');
                             },         

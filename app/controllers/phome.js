@@ -8,6 +8,9 @@ export default Controller.extend({
      show1: function(){
                 this.transitionToRoute('precords');
                     },
+                    shows: function(){
+                        this.transitionToRoute('plab');
+                            },
                     show2: function(){
                         this.transitionToRoute('pmedication');
                             },         
