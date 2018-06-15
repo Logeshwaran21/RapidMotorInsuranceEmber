@@ -1,42 +1,6 @@
 
     <body class="homescreen">
-    <div id="wrapper">
-    <!-- Navigation -->
     
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            
-            
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://cijulenlinea.ucr.ac.cr/dev-users/">
-               
-            </a>
-        </div>
-        
-        <!-- Top Menu Items -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-right top-nav">
-            
-                
-                      
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doctor</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
-                    <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
-                </ul>
-            </li>
-        </ul>
-        </div>
         <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
         <div>
             <ul class="nav navbar-nav side-nav">
@@ -64,13 +28,13 @@
                     <a href="home" id="profile4"{{action "show4"}}><font color="black">Logout</font></a>
                 </li>
             </ul>
-            </div>
-        </div>
+            
+        
 <div class="container">
     <div class="row">
 		
             
-        <h1>Doctor's Portal</h1>
+        
         <div class="col-md-12">
         <h2>Record list of patient</h2>
         <br>
@@ -185,20 +149,20 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
         <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
       </div>
-          <div class="modal-body">
-          <div class="form-group">
-        <input class="form-control " type="text" placeholder="Mohsin">
-        </div>
-        <div class="form-group">
-        
-        <input class="form-control " type="text" placeholder="Irshad">
-        </div>
-        <div class="form-group">
-        <textarea rows="2" class="form-control" placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
-    
-        
-        </div>
-      </div>
+         <div class="modal-body">
+											<div class="form-group">
+												<input class="form-control " type="text" placeholder="Visited Date">
+												</div>
+												<div class="form-group">
+													<input class="form-control " type="text" placeholder="Dr.Name">
+													</div>
+													<div class="form-group">
+													<input class="form-control " type="text" placeholder="Clinic">
+													</div>
+													<div class="form-group">
+														<textarea rows="2" class="form-control" placeholder="Reason"></textarea>
+													</div>
+												</div>
           <div class="modal-footer ">
         <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
       </div>

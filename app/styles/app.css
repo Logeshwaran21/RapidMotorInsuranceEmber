@@ -109,7 +109,7 @@
     .side-nav li a:hover,
     .side-nav li a:focus {
         outline: none;
-        background-color: #25b9b9 !important;
+        background-color: #0a0a0a70 !important;
     }
 }
 
@@ -278,7 +278,7 @@
        left: 0;
    }
    .homescreen{
-    background-image: url(https://www.osv.com/Portals/4/EasyDNNNews/21600/822643p13567EDNMain21600shutterstock_528854752.jpg);
+    background-image: url(https://images.careers360.mobi/sites/default/files/content_pic_2016_dec/AMU%20MBBS%20Admission.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
