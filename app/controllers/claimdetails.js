@@ -50,7 +50,7 @@ claimdetails:function (){
             }
 
     $.ajax({
-        url: 'http://localhost:8082/retrieveClaim',
+        url: 'http://159.65.148.82:8082/retrieveClaim',
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify(userdetails),

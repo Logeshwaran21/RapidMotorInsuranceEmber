@@ -6,7 +6,7 @@ export default Controller.extend({
     actions: {
 
         selectpolicy: function () {
-            fetch('http://localhost:8082/getcaptivepolicy', {
+            fetch('http://159.65.148.82:8082/getcaptivepolicy', {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
@@ -134,7 +134,7 @@ export default Controller.extend({
             }
             
             $.ajax({
-                url: 'http://localhost:8082/selectPolicyember',
+                url: 'http://159.65.148.82:8082/selectPolicyember',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify(data),
@@ -191,7 +191,7 @@ export default Controller.extend({
  
 },
 selectpolicy: function () {
-    fetch('http://localhost:8082/getcaptivepolicy', {
+    fetch('http://159.65.148.82:8082/getcaptivepolicy', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
@@ -220,7 +220,7 @@ selectpolicy: function () {
 },
 
 getrating: function(){
-    fetch('http://localhost:8082/getRating', {
+    fetch('http://159.65.148.82:8082/getRating', {
          method: 'GET',
          headers: {
              'Accept': 'application/json',

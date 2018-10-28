@@ -65,7 +65,7 @@ export default Controller.extend({
 
             }
             $.ajax({
-                url: 'http://localhost:8082/submitClaim',
+                url: 'http://159.65.148.82:8082/submitClaim',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify(transactiondata),

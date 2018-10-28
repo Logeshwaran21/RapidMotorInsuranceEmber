@@ -8,7 +8,7 @@ export default Controller.extend({
     actions: {
 
         selectpolicy: function () {
-            fetch('http://localhost:8082/getcaptivepolicy', {
+            fetch('http://159.65.148.82:8082/getcaptivepolicy', {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
@@ -90,7 +90,7 @@ export default Controller.extend({
             }
             console.log(transactiondata)
             $.ajax({
-                url: 'http://localhost:8082/selectPolicyember',
+                url: 'http://159.65.148.82:8082/selectPolicyember',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify(transactiondata),

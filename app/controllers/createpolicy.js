@@ -38,7 +38,7 @@ export default Controller.extend({
             }
 
             $.ajax({
-                url: 'http://localhost:8082/createpolicyember',
+                url: 'http://159.65.148.82:8082/createpolicyember',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify(transactiondata),
@@ -55,7 +55,7 @@ export default Controller.extend({
             
         },
         adminnotification:function(){
-            fetch('http://localhost:8082/Notification', {
+            fetch('http://159.65.148.82:8082/Notification', {
            method: 'GET',
            headers: {
                'Accept': 'application/json',
@@ -140,7 +140,7 @@ export default Controller.extend({
             }
             console.log(transactiondatavalue)
             $.ajax({
-                url: 'http://localhost:8082/notifyApprove',
+                url: 'http://159.65.148.82:8082/notifyApprove',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify(transactiondatavalue),
