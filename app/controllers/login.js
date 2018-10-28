@@ -14,7 +14,7 @@ var mycontroller=this
         
                if(email=="admin@gmail.com" && password == "12345")
                {
-                fetch('http://localhost:8082/getCount', {
+                fetch('http://159.65.148.82:8082/getCount', {
                     method: 'GET',
 
                 }).then((response) => response.json()).then((responseJson) => {
@@ -35,7 +35,7 @@ var mycontroller=this
                 //this.transitionToRoute('createpolicy');
                }
                else if(email=="underwriter@gmail.com"&& password == "123456"){
-                fetch('http://localhost:8082/getCount2', {
+                fetch('http://159.65.148.82:8082/getCount2', {
                     method: 'GET',
 
                 }).then((response) => response.json()).then((responseJson) => {
@@ -60,7 +60,7 @@ var mycontroller=this
 
         $.ajax({
             type: 'POST',
-            url: "http://localhost:8082/Login",
+            url: "http://159.65.148.82:8082/Login",
             
             dataType: 'json',
             data:{email:email,password:password} ,
@@ -76,7 +76,7 @@ var alldetails=result
                 //alert("Login Successful");
                 var groupID = result.result.users.groupID
                        console.log("in loginjs", groupID);
-                fetch('http://localhost:8082/getGroupName', {
+                fetch('http://159.65.148.82:8082/getGroupName', {
                            method: 'POST',
                            headers: {
                                'Accept': 'application/json',
