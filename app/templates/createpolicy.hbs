@@ -1,0 +1,151 @@
+<div id="throbber" style="display:none; min-height:120px;"></div>
+<div id="noty-holder"></div>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cijulenlinea.ucr.ac.cr/dev-users/">
+                {{!-- <img src="http://placehold.it/200x50&text=LOGO"> --}}
+            </a>
+        </div>
+        <!-- Top Menu Items -->
+        <ul class="nav navbar-right top-nav">
+            <li><a href="#" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Stats"><i class="fa fa-bar-chart-o"></i>
+                </a>
+                {{res}}
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-right:23px">Insurance Company <b class="fa fa-angle-down"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
+                    <li class="divider"></li>
+                    <li><a href="login"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav" style="margin-top: -50px;margin-left:-25px;background-color: #8ba747; ">
+            <li>
+                <a href="home" id="profile1" {{action "show5"}}  data-toggle="collapse" data-target="#submenu-1">
+                    <font color="white">Create Policy</font> </a>
+                
+            </li>
+            <li>
+               <a {{action "adminnotification"}} {{action "show5"}}><font color="white">Notification {{user}}</font></a>
+           </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <div class="container" style="display:block;" id="createpolicy">
+         <h1>Create policy</h1>
+        <div class="row">
+            <div class="span8">
+                <form action="billing" method="post" class="form-horizontal" id="billingform" accept-charset="utf-8">
+                    <label for="email" class="control-label">
+                        Create policy:
+                    </label>
+                    <div class="controls">
+                        {{input type="text" valueBinding="policyname"}}
+                    </div>
+                    <br>
+                    <div class="control-group">
+                        <label for="address" class="control-label">
+                            Policy Category:
+                        </label>
+                        <div class="controls">
+                            {{input type="text" valueBinding="policycatagory"}}
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="zip" class="control-label">
+                            Payment:
+                        </label>
+                        <div class="controls">
+                            {{input type="text" valueBinding="paymentrule"}}
+                        </div>
+                    </div>
+                    {{!--
+                    <div class="control-group">
+                        <label for="city" class="control-label">
+                            Reason
+                        </label>
+                        <div class="controls">
+                            {{input type="text" valueBinding="Reason"}}
+                        </div>
+                    </div> --}} {{!--
+                    <div class="control-group">
+                        <label for="country" class="control-label">
+                            status
+                        </label>
+                        <div class="controls">
+                            <select name="country" id="country">
+                                <option value=""></option>
+                                <option value="AR">Approved</option>
+                                <option value="AU">Rejected</option>
+                            </select>
+                        </div>
+                    </div> --}}
+                   
+                        <button style="margin-left: 219px;" type="submit" class="btn btn-large btn-primary" {{action "createpolicy"}}>Validate&Submit</button>
+              
+                </form>
+            </div> <!-- .span8 -->
+
+        </div>
+    </div>
+     <div id="approvepolicy" style="display:none;"  class="container-fluid">
+      
+        <br>
+        <br>
+        <form name="spam_list" {{action 'spamDecide' on='submit' }}>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        {{!-- <th>checkbox</th> --}}
+                        <th>Policy ID </th>
+                        <th>Policy Name </th>
+                        <th>Policy Catagory</th>
+                        {{!-- <th>Policy Percentage</th> --}}
+                        <th>Sum Insured</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                {{#each res as |item|}}
+                <tbody>
+                    <tr>
+                        {{!--
+                        <td>{{input type="checkbox" checked=(mut (get item 'isSelected'))}} </td> --}}
+                        {{!-- <td><input type="checkbox" check="true" {{action "checkingdata" item 'isSelected' }} /></td> --}}
+                        <td> <a href="" {{action 'userdetails' item }}><b style="color:blue">{{item.Key}}</b></a></td>
+                        <td> <small class="text-muted">{{item.Record.policyName}}</small></td>
+                        <td> <small class="text-muted">{{item.Record.policycatagory}}</small></td>
+                        {{!-- <td> <small class="text-muted">{{item.Record.policypercentage}}</small></td> --}}
+                        <td> <small class="text-muted">{{item.Record.rules}}</small></td>
+                        <td> <button type="submit" class="btn btn-large btn-primary" {{action "Approve" item}}>Approve</button>
+                         <button type="submit" class="btn btn-large btn-primary" {{action "Reject"}}>Reject</button></td>
+                    </tr>
+                </tbody>
+                {{/each}}
+                <br>
+            </table>
+        </form>
+        <br>
+    </div>
+</div>
+
+
+

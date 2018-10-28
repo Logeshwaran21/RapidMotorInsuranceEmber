@@ -24,7 +24,9 @@ export default Controller.extend({
     //   y.style.display= "none";
 
     //  },
-
+    show6: function(){
+        this.transitionToRoute('home2');
+         },
     show5:function () {
       var x = document.getElementById("reports");
       var y = document.getElementById("reports1");

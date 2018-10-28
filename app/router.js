@@ -26,6 +26,14 @@ Router.map(function() {
   this.route('lprofile');
   this.route('ltest');
   this.route('plab');
+  this.route('createpolicy');
+  this.route('underwriter');
+  this.route('userhome');
+  this.route('submitclaim');
+  this.route('claimdetails');
+  this.route('policyselect');
+  this.route('tpaclaimdetails');
+  this.route('adminnotification');
 });
 
 export default Router;

@@ -1,245 +1,157 @@
-<body style="background-color:rgb(131, 160, 163);">
+
+				  <div id="throbber" style="display:none; min-height:120px;"></div>
+<div id="noty-holder"></div>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cijulenlinea.ucr.ac.cr/dev-users/">
+                {{!-- <img src="http://placehold.it/200x50&text=LOGO"  > --}}
+            </a>
+        </div>
+        <!-- Top Menu Items -->
+        <ul class="nav navbar-right top-nav">
+            <li><a href="#" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Stats"><i class="fa fa-bar-chart-o"></i>
+                </a>
+            </li>            
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-right:23px">User01 <b class="fa fa-angle-down"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
+                    <li class="divider"></li>
+                    <li><a href="login"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav></div> 
+  
     <div class="bg-agile">
-	<div class="book-appointment">
-	<h2>Medical Information</h2>
-	<ul class="nav nav-pills" style="margin-left:55px">
-             
-      
-               <li class=" " style="width:30%"><a class="btn btn-lg btn-default" data-toggle="tab" href="#home">Doctor</a></li>
-               <li class=" " style="width:30%"><a class=" btn btn-lg btn-default" data-toggle="tab" href="#menu1">patient</a></li>
-               <li class=" " style="width:30%"><a class=" btn btn-lg btn-default" data-toggle="tab" href="#menu2">lab</a></li>
-            </ul>
-			<div class="tab-content">
+    <div class="book-appointment">
+    <h2>User Registration</h2>
+    
+            <div class="tab-content">
                <div id="home" class="tab-pane fade in active">
                   <form action="#">
-			{{!-- <form action="#" method="post"> --}}
-				<div class="left-agileits-w3layouts same">
-					<div class="gaps">
-					
-						<p>Doctor Name</p>
-						{{input type="text" id="doctorname" name="First Name" valueBinding="doctorname" placeholder="Doctor Name" }}
-					</div>	
-					<div class="gaps">
-						<p>Last Name</p>
-							{{input type="text" id="lastname" name="Last Name" valueBinding="lastname" placeholder="Last Name" }}
-					</div>
-					<div class="gaps">
-						<p>Gender</p>	
-							<select class="form-control">
-								<option></option>
-								<option>Male</option>
-								<option>Female</option>
-							</select>
-					</div>
-					<div class="gaps">
-						<p>Date of Birth</p>		
-						{{input  id="datepicker1" name="Text" type="text" valueBinding="dob" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required=""}}
-					</div>
-					 <div class="gaps">
-						<p>Experience in Years</p>
-						{{input type="text"id="experience" name="First Name" valueBinding="experience"placeholder="Experience" required=""}}
-					</div>	
-					<div class="gaps">
-						<p>Designation</p>
-						{{input type="text" id="Designation" name="First Name" valueBinding="designation"placeholder="Designation" required=""}}
-					</div>			
-					
-					<div class="gaps">	
-						<p>Phone Number</p>
-						{{input type="text" id="Phone" name="Number" valueBinding="phonenumber"placeholder="Phone Number" required=""}}
-					</div>
-				<div class="gaps">	
-						<p>Email</p>
-						 {{input type="email"  model=this  valueBinding='email' placeholder="Email Id" required=true}}
-					</div>
-				</div>
-				<div class="right-agileinfo same">
-					<div class="gaps">
-						<p>Hospital Name</p>
-						{{input type="text" id="Hospital" name="First Name" valueBinding="hospitalname" placeholder="hospitalname" required=""}}
-					</div>
-					<div class="gaps">
-						<p>Qualification</p>
-						{{input type="text" id="Qualification" name="First Name"valueBinding="qualification" placeholder="qualification" required=""}}
-					</div>
-					<div class="gaps">
-						<p>Address</p>
-						{{textarea id="message" id="Address" name="message" valueBinding="address"placeholder="address" title="Please enter Your Comments"}}
-						</div>
-						<br><br>
-					 <div class="gaps">
-						<p>License id</p>
-						{{input type="text" id="License" name="First Name" valueBinding="licenseid"placeholder="Licenseid" required=""}}
-					</div>
-					<div class="gaps">	
-						<p>Password</p>
-					{{input type="email"  model=this  valueBinding='password' placeholder="password" required=""}}
-					</div>
-				<div class="gaps">	
-						<p>Confirm Password</p>
-						 {{input type="email"  model=this  valueBinding='confirmpassword' placeholder="confirmpassword" required="true"}}
-					</div>
-				</div>
-				<div class="clear"></div>
-				<button type="submit" {{action "DocSubmit"}} class="pull-right btn btn-block btn-success">Submit</button>
-			</form>
-		</div>
+            {{!-- <form action="#" method="post"> --}}
+                <div class="center-agileits-w3layouts same">
+                    <div class="gaps">
+                    
+                        <p>Name</p>
+                        {{!-- <input type="text" id="Name" name="First Name" valuebinding="name" placeholder="" > --}}
+                     {{input  type="text" id="Name" valuebinding="Name"}}
+                    </div>    
+                    <div class="gaps">
+                        <p>Address</p>
+                            {{!-- <input type="text" id="Name" name="First Name" valuebinding="address" placeholder=""> --}}
+                 {{input  type="text"id="Address" valuebinding="Address"}}
+                    </div>
+                    {{!-- <div class="gaps">
+                        <p>Gender</p>   
+                            <select class="form-control">
+                                <option></option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                    </div> --}}
+                    <div class="gaps">
+                        <p>Phone number</p>     
+                        {{!-- <input  name="Text" type="text" valuebinding="phoneNumber" required=""> --}}
+                         {{input  type="text"id="Phone" valuebinding="Phone"}}
+                    </div>
+                    <div class="gaps">
+                        <p>Group Name</p>       
+                        <input   name="Text" type="text" id="groupname"valuebinding="groupname"  required="">
+                    </div>
+                <div class="gaps">  
+                        <p>Email</p>
+                         <input type="email" id="email"   valuebinding='email' placeholder="" required="true">
+                    </div>
+            
+                <div class="gaps">  
+                        <p>Password</p>
+                    
+                         <input type="password  " id="Password" name="First Name"   valuebinding='password' placeholder="" required="">
+                    </div>
+                <div class="gaps">  
+                        <p>Confirm Password</p>
+                         <input type="password  " id="confirmpassword" name="First Name"   valuebinding='confirmpassword' placeholder="" required="">
+                    </div>
+                <div class="right-agileinfo same">
+                    <div class="gaps">
+                        <p>Proposed Captive Name</p>
+                        <input type="text" id="captiveName" name="First Name" valuebinding="captiveName" placeholder="" required="">
+                    </div>
+                    <div class="gaps">
+                        <p>Enter parent 0r Sponsor</p>
+                        <input type="text" id="parent" name="First Name"valuebinding="parent" placeholder="" required="" >
+                    </div>
+                    <div class="gaps">
+                        <p>Employee ID</p>
+                    
+                        <input type="text" id="employeeID" name="Last Name" valuebinding="employeeID" placeholder="" >
+                        </div>
+                    
+                    <div class="gaps" >
+                        <p>Select captive type</p>  
+                            <select class="form-control"id="captive">
+                                <option>Select Captive</option>
+                                <option>Pure</option>
+                                <option>Association</option>
+                                <option>Industrial Insured</option>
+                                <option>Captive Risk Retention Group</option>
+                            </select>
+                    </div>
+                        <div class="gaps" >
+                        <p>Select Business entity</p>   
+                            <select class="form-control"id ="business">
+                                <option>Select Entity</option>
+                                <option>Corporation</option>
+                                <option>LLC</option>
+                                <option>Partnership</option>
+                            </select>
+                    </div>
+                        <div class="gaps" >
+                        <p>Select Organization</p>  
+                            <select class="form-control" id ="organization">
+                                <option>Select Organization</option>
+                                <option>Stock</option>
+                                <option>Mutual</option>
+                                <option>Reciprocal</option>
+                            </select>
+                    </div>
+                        </div>
+                </div>
+                <div class="clear"></div>
+                <button type="submit" {{action "userSubmit"}} class="pull-right btn btn-block btn-success">Submit</button>
+            </form>
+        </div>
    
    
-               <div id="menu1" class="tab-pane fade in active">
-                  <form action="#">
-			{{!-- <form action="#" method="post"> --}}
-				<div class="left-agileits-w3layouts same">
-					<div class="gaps">
-						<p>Patient Name</p>
-						<input type="text" name="Patient Name" placeholder="" required=""/>
-					</div>	
-					<div class="gaps">
-						<p>Last Name</p>
-							<input type="text" name="Last Name" placeholder="" required=""/>
-					</div>
-					<div class="gaps">
-						<p>Gender</p>	
-							<select class="form-control">
-								<option></option>
-								<option>Male</option>
-								<option>Female</option>
-							</select>
-					</div>
-					<div class="gaps">
-						<p>Date of Birth</p>		
-						<input  id="datepicker1" name="Text" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-					</div>
-					<div class="gaps">
-						<p>Home Number</p>
-						<input type="text" name="First Name" placeholder="" required=""/>
-					</div>	
-					
-					<div class="gaps">	
-						<p>Phone Number</p>
-						<input type="text" name="Number" placeholder="" required=""/>
-					</div>
-					<div class="gaps">	
-						<p>Adhaar Number</p>
-						<input type="text" name="Number" placeholder="" required=""/>
-					</div>
-				</div>
-				<div class="right-agileinfo same">
-					<div class="gaps">
-						<p>Occupation</p>
-						<input type="text" name="First Name" placeholder="" required=""/>
-					</div>
-					<div class="gaps">
-						<p>Blood Group</p>
-						<input type="text" name="First Name" placeholder="" required=""/>
-					</div>
-					<div class="gaps">
-						<p>Address</p>
-						<textarea id="message" name="message" placeholder="" title="Please enter Your Comments"></textarea>
-						</div>
-						<br><br>
-					<div class="gaps">
-						<p>Password</p>
-						<input type="text" name="First Name" placeholder="" required=""/>
-					</div>
-					<div class="gaps">	
-						<p>Confirm Password </p>
-						<input type="text" name="Number" placeholder="" required=""/>
-					</div>
-					
-				</div>
-				<div class="clear"></div>
-				<button type="submit" class="pull-right btn btn-block btn-success">Submit</button>
-			</form>
-		
+            
+        </div>
+        
    </div>
-   <div id="menu2" class="tab-pane fade in active">
-                  <form action="#">
-			{{!-- <form action="#" method="post"> --}}
-				<div class="left-agileits-w3layouts same">
-					<div class="gaps">
-						<p>First Name</p>
-						<input type="text" name="First Name" placeholder="" required=""/>
-					</div>	
-					<div class="gaps">
-						<p>Last Name</p>
-							<input type="text" name="Last Name" placeholder="" required=""/>
-					</div>
-					<div class="gaps">
-						<p>Gender</p>	
-							<select class="form-control">
-								<option></option>
-								<option>Male</option>
-								<option>Female</option>
-							</select>
-					</div>
-					<div class="gaps">
-						<p>Date of Birth</p>		
-						<input  id="datepicker1" name="Text" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-					</div>
-					<div class="gaps">
-						<p>Designation</p>
-						<input type="text" name="First Name" placeholder="" required=""/>
-					</div>	
-					<div class="gaps">
-						<p>Experience in years</p>
-						<input type="text" name="First Name" placeholder="" required=""/>
-					</div>			
-					
-					<div class="gaps">	
-						<p>Phone Number</p>
-						<input type="text" name="Number" placeholder="" required=""/>
-					</div>
-					<div class="gaps">	
-						<p>Home Number</p>
-						<input type="text" name="Number" placeholder="" required=""/>
-					</div>
-				</div>
-				<div class="right-agileinfo same">
-					<div class="gaps">
-						<p>Lab Name</p>
-						<input type="text" name="First Name" placeholder="" required=""/>
-					</div>
-					<div class="gaps">
-						<p>Qualification</p>
-						<input type="text" name="First Name" placeholder="" required=""/>
-					</div>
-					<div class="gaps">
-						<p>Address</p>
-						<textarea id="message" name="message" placeholder="" title="Please enter Your Comments"></textarea>
-						</div><br><br>
-					 <div class="gaps">
-						<p>License Id</p>
-						<input type="text" name="First Name" placeholder="" required=""/>
-					</div>
-					
-					
-					<div class="gaps">	
-						<p>Password</p>
-						<input type="text" name="Number" placeholder="" required=""/>
-					</div>
-					<div class="gaps">	
-						<p>Confirm Password</p>
-						<input type="text" name="Number" placeholder="" required=""/>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<button type="submit" class="pull-right btn btn-block btn-success">Submit</button>
-			</form>
-		</div>
-		
-   </div>
-	</div>
     </div>
-	
-</body>
+   
+    
   
-		{{!-- <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-		<!-- Calendar -->
-				<link rel="stylesheet" href="css/jquery-ui.css" />
-				<script src="js/jquery-ui.js"></script>
-				  <script>
-						  $(function() {
-							$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
-						  });
-				  </script> --}}
+        {{!-- <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <!-- Calendar -->
+                <link rel="stylesheet" href="css/jquery-ui.css" />
+                <script src="js/jquery-ui.js"></script>
+                  <script>
+                          $(function() {
+                            $( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+                          });
+                  </script> --}}
+
+
+

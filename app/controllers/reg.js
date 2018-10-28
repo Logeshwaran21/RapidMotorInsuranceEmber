@@ -8,50 +8,50 @@ export default Controller.extend( {
     ShowRequest: false, //this is to show request id
    
     actions: {
-        DocSubmit: function() {
+        userSubmit: function() {
             console.log("115")
-            var email = this.get('email');
+            var Name =$('#Name').val();
+            console.log(Name);
+            var Address =$('#Address').val();
+            console.log(Address);
+            var Phone = $('#Phone').val();
+            console.log(Phone);
+            var groupname = $('#groupname').val();
+            console.log(groupname);
+            var email = $('#email').val();
             console.log(email);
-            var password = this.get('password');
-            console.log(password);
-            var confirmpassword = this.get('confirmpassword');
+            var Password = $('#Password').val();
+            console.log(Password);
+            var confirmpassword = $('#confirmpassword').val();
             console.log(confirmpassword);
-            var doctorname = this.get('doctorname');
-            console.log(doctorname);
-            var lastname = this.get('lastname');
-            console.log(lastname);
-            var dob = this.get('dob');
-            console.log(dob);
-            var experience = this.get('experience');
-            console.log(experience);
-            var designation= this.get('designation');
-            console.log(designation);
-            var phonenumber = this.get('phonenumber');
-            console.log(phonenumber);
-            var hospitalname= this.get('hospitalname');
-            console.log(hospitalname);
-            var qualification = this.get('qualification');
-            console.log(qualification);
-            var address = this.get('address');
-            console.log(address);
-            var licenseid = this.get('licenseid');
-            console.log(licenseid);
+            var captiveName= $('#captiveName').val();
+            console.log(captiveName);
+            var parent = $('#parent').val();
+            console.log(parent);
+            var employeeID= $('#Name').val();
+            console.log(employeeID);
+            var captive = $('#captive').val();
+            console.log(captive);
+            var business =$('#business').val();
+            console.log(business);
+            var organization =$('#organization').val();
+            console.log(organization);
 
             var mycontroller = this;
             var dataString = {
-                "email": email,
-                "password": password,
-                "confirmpassword":confirmpassword,
-                "doctorname":doctorname,
-                "lastname":lastname,
-                "dob":dob,
-                "experience":experience,
-                "designation":designation,
-                "qualification":qualification,
-                "address":address,
-                "licenseid":licenseid,
-                "hospitalname":hospitalname,
-                "phonenumber":phonenumber
+                "Name": Name,
+                "Address": Address,
+                "Phone":Phone,
+                "groupname":groupname,
+                "email":email,
+                "Password":Password,
+               // "confirmpassword":confirmpassword,
+                "captiveName":captiveName,
+                "parent":parent,
+                "employeeID":employeeID,
+                "captive":captive,
+                "business":business,
+                "organization":organization
 
 
 
@@ -59,9 +59,9 @@ export default Controller.extend( {
             };
             console.log(JSON.stringify(dataString));
                 console.log(email);
-                console.log(password);
+                console.log(Password);
                 return $.ajax({
-                    url: 'http://localhost:8082/registerFront',
+                    url: 'http://localhost:8082/registerUser',
                     type: 'POST',
                     contentType: 'application/json',
                     data: JSON.stringify(dataString),

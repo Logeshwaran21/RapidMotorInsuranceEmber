@@ -9,12 +9,12 @@
                     <div class="login" id="card">
                     	<div class="front signin_form"> 
                             <br><br><br><br>
-                      <center><h1>Rapid EHR</h1></center>      
+                      <center><h2>Rapid Insurance</h2></center>      
                         <p>Login Your Account</p>
                           <form class="login-form">
                               <div class="form-group">
                                   <div class="input-group">
-                                      <input type="email" id ="loginEmail" class="form-control" valuebinding="email" placeholder="Type your email">
+                                      <input type="email" id ="email" class="form-control" valuebinding="email" placeholder="Type your email">
                                       <span class="input-group-addon">
                                           <i class="glyphicon glyphicon-user"></i>
                                       </span>
@@ -22,28 +22,16 @@
                               </div>
                               <div class="form-group">
                                   <div class="input-group">
-                                      <input type="password" id ="loginPassword" class="form-control" valuebinding="password" placeholder="Type your password">
+                                      <input type="password" id ="password" class="form-control" valuebinding="password" placeholder="Type your password">
                                       <span class="input-group-addon">
                                           <i class="glyphicon glyphicon-lock"></i>
                                       </span>
                                   </div>
                               </div>
 
-                                <div class="dropdown">
-  <label>Select Category</label>
- 
-  <select class="selectpicker dropbtn" id ="id_of_select">
-  <optgroup>
-    <option><a href="home" id="doctor" valuebinding="doctor" selected >Doctor</a></option>
-    <option><a href="lhome"id="lab" valuebinding="lab">Lab Reporter</a></option>
-    <option><a href="phome"id="patient" valuebinding="patient">General User</a></option>
-  </optgroup>
-  </select>
-</div>
-<br><br>
+
                               
-                              
-                              <div class="form-group sign-btn">
+                         <div class="form-group sign-btn">
                                   
                                  <button  type="button" id="mylogin"class="btn btn-primary" {{action "Login"}}>Login</button><br><br>
                                   <button  type="button" id="myreg"class="btn btn-primary" {{action "Register"}}>Register</button>
@@ -100,7 +88,7 @@
     </div>
 
     
-    <script>
+    {{!-- <script>
         $().ready(function() {
 	$("#card").flip({
 	  trigger: 'manual'
@@ -132,6 +120,6 @@ $("#unflip-btn").click(function(){
 </script>
 
 
-
+ --}}
 
 

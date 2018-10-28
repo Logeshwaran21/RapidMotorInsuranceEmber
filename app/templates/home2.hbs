@@ -53,12 +53,23 @@
 								</div>
 								
 						</div>
+                        <div class="dropdown">
+  <label>Select Capative</label>
+ 
+  <select class="selectpicker dropbtn" id ="id_of_select">
+  <optgroup>
+    <option><a  id="doctor" value="doctor" selected >Doctor</a></option>
+    <option><a id="lab" value="lab">Lab Reporter</a></option>
+    <option><a id="patient" value="patient">General User</a></option>
+  </optgroup>
+  </select>
+</div>
 				
 						<div class="form-group">
 							
 								<div class="input-group">
 									
-									<button type="submit" {{action "DocSubmit"}} class="pull-right btn btn-block btn">Next</button>
+									<button type="submit" {{action "DocSubmit"}} class="pull-right btn btn-block btn">submit</button>
 								</div>
 								
 						</div>

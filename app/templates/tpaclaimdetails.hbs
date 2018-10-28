@@ -1,0 +1,147 @@
+<br>
+	{{!-- <body class ="homescreen"> --}}
+<div>		
+		<br>
+			{{!-- <h1>
+				<center>Welcome to Doctor's EHR portal</center>
+			</h1> --}}
+            	<div id="reports" style="display: block;" class="container">
+			<div style="margin-top: 37px;">
+				<center>
+					<form action="connect">Enter Your Submit Id: 
+						 {{input type="text" id="userId" valueBinding="userId" }}
+							<br><br>
+								<button style="margin-left: 123px;" {{action "claimdetails"}} {{action "show5"}}>submit</button>
+								
+								</form>
+							</center>
+						</div></div>
+
+   <div id="reports1" style="display: none;" class="container">
+ <div >
+    <br>
+    <div style="margin-left: 308px;">
+    <h2 ><b>Claim Report</b></h2>
+    </div>
+    <br>
+        <form>
+           
+                <div class="container" style="margin-left: 255px;">
+                    {{!-- <h3 style={{ marginTop: -14,color:"#1f305d",fontSize:20 }} ><b>PATIENT DETAILS</b></h3>  --}}
+                    <label > Name of Insurer    :  {{name}} </label><br>
+                    <label > Registered ID   : {{registerId}} </label><br>
+                    <label > Notified Date   : {{notifiedDate}}</label><br>
+                    <label > Date of Loss    :  {{DOL}} </label><br>
+                    <label > Category        : {{Category}} </label><br>
+                    <label > Description of Damage: {{DOD}}  </label><br>
+                    <label > Claim Amount    : {{claimAmount}}   </label><br> 
+                    <label > Policy Id    : {{policyid}} </label> <br>
+				    <label > SubmitID    : {{submitID}} </label> <br>
+    				{{!-- <label > Amount User have to pay : {{AmountuserHavetopay}}  </label> <br>
+    				<label > Amount Payer would pay : {{AmountPayerWouldPay}} </label> <br>
+    				<label > Message :  {{message}} </label> <br>
+    				<label > Status    : {{status}} </label> <br> --}}
+    			</div>
+    
+    
+    </form>
+    
+      
+    </div>
+</div>
+						
+						<div id="throbber" style="display:none; min-height:120px;"></div>
+<div id="noty-holder"></div>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+			 {{!-- <button style="margin-left: 1046px;margin-top: 12px;"  {{action "show0"}}>home </button> --}}
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cijulenlinea.ucr.ac.cr/dev-users/">
+                {{!-- <img src="http://placehold.it/200x50&text=LOGO"  > --}}
+            </a>
+        </div>
+        <!-- Top Menu Items -->
+        <ul class="nav navbar-right top-nav">
+            {{!-- <li><a href="#" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Stats"><i class="fa fa-bar-chart-o"></i>
+                </a>
+            </li>             --}}
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-right:23px">Underwriter<b class="fa fa-angle-down"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
+                    <li class="divider"></li>
+                    <li><a href="login"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav></div> 
+  <div class="collapse navbar-collapse navbar-ex1-collapse"  >
+            <ul class="nav navbar-nav side-nav" style="margin-top: -50px;margin-left:-25px;background-color:#b91250c9; ">
+                <li>
+                    <a href="home" style="color:white" id="profile1" {{action "show1"}} data-toggle="collapse" data-target="#submenu-1">TPA Approval </a>
+                    {{!-- <ul id="submenu-1" class="collapse" >
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.1</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.2</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.3</a></li>
+                    </ul> --}}
+                </li>
+                <li>
+                    <a href="home" id="profile1" {{action "show2"}} style="color:white" data-toggle="collapse" data-target="#submenu-2">User Details </a>
+                    {{!-- <ul id="submenu-2" class="collapse">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.1</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.2</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.3</a></li>
+                    </ul> --}}
+                </li>
+                {{!-- <li>
+                    <a href="home" id="profile1" {{action "show3"}} style="color:white"><i class="fa fa-fw fa-user-plus"></i> Claim Details</a>
+                </li> --}}
+                <li>
+                    <a href="home" id="profile1" {{action "show4"}} style="color:white">Notification</a>
+                </li>
+                {{!-- <li>
+                    <a href="faq"><i class="fa fa-fw fa fa-question-circle"></i> MENU 5</a>
+                </li> --}}
+            </ul>
+        </div>
+								<!-- Top Menu Items -->
+								<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+								
+									{{!-- <ul class="nav navbar-nav side-nav">
+										<li>
+											<a href="home" id="profile" {{action "show"}}>
+												<font color="black">Profile</font>
+											</a>
+										</li>
+										<!--<li><a href="home" id="profile1" {{action "show1"}}><font color="black">Hospital Records</font></a></li>-->
+										<li>
+											<a href="home" id="profile2" {{action "show2"}}>
+												<font color="black">Medication</font>
+											</a>
+										</li>
+										<li>
+											<a href="home" id="profile3" {{action "show3"}}>
+												<font color="black">FirstAid Info</font>
+											</a>
+										</li>
+										<li>
+											<a href="home" id="profile4"{{action "show4"}}>
+												<font color="black">Logout</font>
+											</a>
+										</li>
+									</ul> --}}
+								</div>
+							
+						
+
+
+

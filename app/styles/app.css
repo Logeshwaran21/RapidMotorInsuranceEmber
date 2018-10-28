@@ -264,7 +264,7 @@
    }
    
    .login-screen {
-       background-image: url(http://www.dpulse.com/images/ekg-and-binary-background-slider.jpg);
+       background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/background-images-for-login-form-8.jpg);
        background-position: center;
        background-repeat: no-repeat;
        background-attachment: fixed;
@@ -2377,5 +2377,42 @@ html {
                                         box-sizing: border-box;
                                     }
 
-                                    
-
+                                    .main{
+                                        padding: 40px 0;
+                                   }
+                                   .main input,
+                                   .main input::-webkit-input-placeholder {
+                                       font-size: 11px;
+                                       padding-top: 3px;
+                                   }
+                                   .main-center{
+                                        margin-top: 30px;
+                                        margin: 0 auto;
+                                        max-width: 400px;
+                                       padding: 10px 40px;
+                                       background:#009edf;
+                                           color: #FFF;
+                                       text-shadow: none;
+                                       -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+                                   -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+                                   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+                                   
+                                   }
+                                   span.input-group-addon i {
+                                       color: #009edf;
+                                       font-size: 17px;
+                                   }                                  
+                                   .regi-screen {
+                                    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9B_j5yBJmYB3sTkvqX62CXe5_1Xpr0kI5yQyba0FW6ABSF1f);
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-attachment: fixed;
+                                    background-size: cover;
+                                    -moz-background-size: cover;
+                                    -webkit-background-size: cover;
+                                    position: fixed;
+                                    top: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    left: 0;
+                                }
